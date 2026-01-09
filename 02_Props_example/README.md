@@ -1,0 +1,1 @@
+This is simple react project to learn the cocept of Props in react , Props is a very important and always used concept in react framework .With the help of Props we can use single multiple times with differnt data, here data flows from parent component to child component always and a never from any child component to its parent component. This is important to know.
