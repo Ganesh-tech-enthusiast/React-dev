@@ -1,0 +1,1 @@
+In this project I have just tried to install the tailwind css in my project and understand how tailwind css can be useful in building dynamic web pages
