@@ -1,0 +1,119 @@
+@import "tailwindcss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://cdn.hswstatic.com/gif/gettyimages-167430693.jpg");
+  background-size: cover;        
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+/* Black overlay */
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -10;
+}
+.inputboxer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  color: black;
+  min-width: 681px;
+}
+.left .right{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+.inputboxer input{
+  font-size: 2rem;
+}
+.right{
+  margin-left: 100px;
+}
+#soft{
+  color: gray;
+  font-size: large;
+}
+#selection{
+  width: 100px;
+  font-size: 1.5rem;
+  border: none;
+
+}
+.main{
+  background: rgba(255, 255, 255, 0.15); /* transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding: 1.3rem;
+  border-radius: 1rem;
+  
+}
+.swap-btn{
+  padding: 10px 30px;
+  background: rgb(94, 165, 251);
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  
+}
+form{
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.convert-btn{
+  background: rgb(41, 120, 232);
+  color: black;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+form h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  /* background: #de8484; */
+  padding: 2px;
+  border-radius: 1rem;
+}
+.left{
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
