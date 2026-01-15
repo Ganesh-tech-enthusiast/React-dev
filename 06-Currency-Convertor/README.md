@@ -1,5 +1,30 @@
-In this project i have created an advanced currency convertor to convert currency with real time rate.
-key topics used in this project
-1.Custom hook -  I have created a custom hook to trigger the api for each currency selection
-2.Props - I used props to use one input component dynamically for different data 
-3.Map method - for selecting a currency from selection input i have made use of dynamic selection using map method to the api
+## 💱 Advanced Currency Converter
+
+In this project, I have built an **advanced currency converter** that converts currencies using **real-time exchange rates**.
+
+---
+
+## 🚀 Key Topics Used
+
+### 1️⃣ Custom Hook
+- Created a **custom React hook** to trigger the API call whenever the selected currency changes.
+- This helps keep the logic **reusable, clean, and separated** from UI components.
+
+### 2️⃣ Props
+- Used **props** to make a single input component reusable.
+- The same component dynamically handles different currency values and inputs.
+
+### 3️⃣ Map Method
+- Used the **`map()` method** to dynamically generate currency options.
+- Currency selections are populated from the API response instead of being hard-coded.
+
+---
+
+## 🛠️ Features
+- Real-time currency conversion
+- Dynamic currency selection
+- Clean and reusable component structure
+- Scalable React architecture
+
+![App Screenshot](./src/assets/image.png)
+
