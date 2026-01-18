@@ -1,16 +1,54 @@
-# React + Vite
+# React Context API – Complete Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is Context API?
+Context API is a feature in React that allows us to **share data globally** across components without passing props manually at every level.
 
-Currently, two official plugins are available:
+It helps to solve the problem of **props drilling**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Why Context API?
+### Problem: Props Drilling
+Passing data from parent to deeply nested child components using props even when intermediate components don’t need it.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Solution: Context API
+Context provides a way to store data in a **central place** and access it directly from any component.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## When to Use Context API
+Use Context when data is:
+- Global
+- Needed by many components
+
+### Common Use Cases
+- Authentication (user data)
+- Theme (light / dark mode)
+- Language / localization
+- Global settings
+- Cart data (small to medium apps)
+
+---
+
+## Core Concepts of Context API
+
+Context API has **4 main steps**:
+
+1. Create Context  
+2. Create Provider  
+3. Wrap components with Provider  
+4. Consume Context  
+
+---
+
+## 1. Creating Context
+
+Context is usually created in a separate folder.
+
+### Example: `ThemeContext.js`
+```js
+import { createContext } from "react";
+
+const ThemeContext = createContext();
+
+export default ThemeContext;
