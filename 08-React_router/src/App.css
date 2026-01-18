@@ -1,0 +1,35 @@
+*{
+    margin: 0; padding: 0;
+    /* background: red; */
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: pink;
+}
+.nav h2{
+    font-size: xx-large;
+    /* position: fixed; */
+}
+.nav div{
+    display: flex;
+    gap: 3rem;
+    margin-right: 13rem;
+}
+h1{
+    /* display: flex; */
+    position: absolute;
+    font-size: 80px;
+    text-decoration: underline;
+    transform: translate(50%,60%);
+   background: blue;
+    color: white;
+    font-weight: 600;
+    padding: 45px;
+    border-radius: 23px;
+}
+body{
+    background: black;
+}
